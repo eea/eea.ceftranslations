@@ -1,0 +1,34 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="eea">
+
+  <browser:resourceDirectory
+      name="eea.ceftranslations.images"
+      directory="./img" />
+
+  <browser:page
+      for="*"
+      name="translation"
+      class="eea.ceftranslations.ceftranslations.Translations.translation"
+      allowed_attributes="title"
+      permission="cmf.ModifyPortalContent"
+      />
+
+  <browser:page
+      for="*"
+      name="call_translation"
+      class="eea.ceftranslations.ceftranslations.Translations.call_translation"
+      permission="cmf.ModifyPortalContent"
+      />
+
+  <browser:page
+      for="*"
+      name="translations_settings"
+      class="eea.ceftranslations.ceftranslations.TranslationsSettings"
+      allowed_attributes="enabled"
+      permission="cmf.ModifyPortalContent"
+      />
+
+</configure>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+ <object name="portal_controlpanel">
+   <configlet
+     title="EEA CEF Translations Settings"
+     action_id="eea.ceftranslations.settings"
+     appId="eea.ceftranslations"
+     remove="True">
+       <permission>Manage portal</permission>
+   </configlet>
+ </object>

@@ -1,0 +1,11 @@
+version: "2"
+services:
+  ceftranslations:
+    image: plone:5
+    ports:
+    - "8080"
+    volumes:
+    - ../../:/plone/instance/src/eea.ceftranslations
+    environment:
+      ADDONS: "eea.ceftranslations plone.app.testing"
+      DEVELOP: "src/eea.ceftranslations"
