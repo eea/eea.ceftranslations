@@ -14,18 +14,24 @@ except ImportError:
 logger = logging.getLogger('eea.ceftranslations')
 
 
-class Translations(BrowserView):
-    """ Suggestions class """
+class TranslationCall(BrowserView):
+    """ Call Translation class """
 
     def __call__(self):
         """
         """
+        import ipdb;ipdb.set_trace()
+        pass
 
-    def translation(self):
-        """ """
 
-    def call_translation(self):
-        """ """
+class TranslationCallback(BrowserView):
+    """ Translation class """
+
+    def __call__(self):
+        """
+        """
+        import ipdb;ipdb.set_trace()
+        pass
 
 
 class TranslationsSettings(BrowserView):

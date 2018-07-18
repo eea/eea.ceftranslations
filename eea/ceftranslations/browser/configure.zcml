@@ -10,23 +10,23 @@
 
   <browser:page
       for="*"
-      name="translation"
-      class="eea.ceftranslations.ceftranslations.Translations.translation"
+      name="translation_callback"
+      class="eea.ceftranslations.translations.TranslationCallback"
       allowed_attributes="title"
       permission="cmf.ModifyPortalContent"
       />
 
   <browser:page
       for="*"
-      name="call_translation"
-      class="eea.ceftranslations.ceftranslations.Translations.call_translation"
+      name="translation_call"
+      class="eea.ceftranslations.translations.TranslationCall"
       permission="cmf.ModifyPortalContent"
       />
 
   <browser:page
       for="*"
       name="translations_settings"
-      class="eea.ceftranslations.ceftranslations.TranslationsSettings"
+      class="eea.ceftranslations.translations.TranslationsSettings"
       allowed_attributes="enabled"
       permission="cmf.ModifyPortalContent"
       />
